@@ -1,0 +1,8 @@
+<div [ngClass]="parentclass" [ngStyle]="parentstyle" (click)="change2red()">
+  parent works! {{ parent + " " + usr }}
+   <ul>
+    <li *ngFor="let u of user">
+      <span>{{u.firstname}}</span> <span>{{u.lastname}}</span> is <span>{{ u.age }}</span> years old.
+    </li>
+  </ul>
+</div>

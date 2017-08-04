@@ -1,0 +1,11 @@
+<div>
+  grandparent works and {{ headlineMessage + " " + usr}}
+  <ul>
+    <li *ngFor="let u of user">
+      <span>{{u.firstname}}</span> <span>{{u.lastname}}</span> is <span>{{ u.age }}</span> years old.
+    </li>
+  </ul>
+   
+  <parent [parentinputcolor]="defaultColor" (clickParent)="changeGrandParentBackGround($event)"></parent>
+</div>
+
